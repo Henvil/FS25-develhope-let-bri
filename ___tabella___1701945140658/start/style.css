@@ -3,43 +3,43 @@ table {
     border: 1px solid #263238;
 }
 
-table caption {
+table > caption {
     font-weight: bold;
     font-size: 18px;
     color: #263238;
     margin: 10px;
 }
 
-table thead {
+table > thead {
     background-color: #455a64;
     color: white;
     font-weight: 700;
 }
 
-table tbody tr:nth-child(even) {
+table > tbody > tr:nth-child(even) {
     background-color: #eceff1;
 }
 
-table tbody tr:nth-child(odd) {
+table > tbody > tr:nth-child(odd) {
     background-color: #b0bec5;
 }
 
-table tfoot {
+table > tfoot {
     background-color: #78909c;
     font-weight: 800;
 }
 
-table tfoot td:nth-child(2),
-table tfoot td:nth-child(3) {
+table > tfoot > td:nth-child(2),
+table > tfoot > td:nth-child(3) {
     text-align: right;
 }
 
-table tbody td:nth-child(2) {
+table > tbody > td:nth-child(2) {
     color: #003300;
     text-align: right;
 }
 
-tbody td:nth-child(3) {
+tbody > td:nth-child(3) {
     color: #7f0000;
     text-align: right;
 }
