@@ -80,8 +80,9 @@
             <img id="logo-img" src="//d9hhrg4mnvzow.cloudfront.net/www.develhope.co/it/sign-up/34cce5ad-develhope.svg"
                 alt="Logo dell'ente di formazione Develhope." />
             <h3>Card di Develhope</h3>
-            <p id="scrittaMutevole">Questo è un esempio di come potrebbe apparire una card, rendendola responsiva e
-                adattando il contenuto qualora venisse visualizzato da uno smartphone.</p>
+            <p id="scrittaMutevole">Questa è la visualizzazione standard. Ho cercato di rendere il tutto responsive e
+                inoltre, qualora venisse mostrato da smartphone, il
+                contenuto di questo paragrafo cambierà.</p>
         </div>
         <div class="item-container">
             <p>Prima item</p>
@@ -101,8 +102,6 @@
             var scrittaMutevole = document.getElementById('scrittaMutevole');
             if (window.innerWidth <= 768) {
                 scrittaMutevole.textContent = 'Questa è la visualizzazione da smartphone!';
-            } else {
-                scrittaMutevole.textContent = 'Questo è un esempio di come potrebbe apparire una card - estetica a parte che spero possiate perdonarmi.';
             }
         });
 
