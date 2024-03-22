@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio Develhope</title>
+    <style>
+        :root {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        article {
+            width: 20%;
+            max-width: 20%;
+            min-width: 20%;
+        }
+
+        #header-container {
+            border-color: rgb(84, 84, 84);
+            border-style: solid;
+            border-width: 0.5px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        #header-container h3,
+        #header-container p {
+            margin-left: 5%;
+        }
+
+
+        #header-container #logo-img {
+            padding-top: 5%;
+            margin: 5%;
+            width: 90%;
+        }
+
+        .item-container {
+            border-color: rgb(84, 84, 84);
+            border-style: solid;
+            border-width: 0.5px;
+        }
+
+        .item-container p {
+            margin-left: 5%;
+        }
+
+        #footer-container {
+            border-color: rgb(84, 84, 84);
+            border-style: solid;
+            border-width: 0.5px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        #footer-container a {
+            margin-left: 5%;
+        }
+
+        @media (max-width: 768px) {
+            article {
+                margin: 5%;
+                width: 90%;
+                max-width: none;
+                min-width: none;
+            }
+
+            #header-container #logo-img {
+                display: block;
+                text-align: center;
+                width: 100%;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <div id="header-container">
+            <img id="logo-img" src="//d9hhrg4mnvzow.cloudfront.net/www.develhope.co/it/sign-up/34cce5ad-develhope.svg"
+                alt="Logo dell'ente di formazione Develhope." />
+            <h3>Card di Develhope</h3>
+            <p id="scrittaMutevole">Questo è un esempio di come potrebbe apparire una card, rendendola responsiva e
+                adattando il contenuto qualora venisse visualizzato da uno smartphone.</p>
+        </div>
+        <div class="item-container">
+            <p>Prima item</p>
+        </div>
+        <div class="item-container">
+            <p>Seconda item</p>
+        </div>
+        <div class="item-container">
+            <p>Terza item</p>
+        </div>
+        <div id="footer-container">
+            <p><a href="#"> Link card </a> <a href="#2"> Altro Link </a></p>
+        </div>
+    </article>
+    <script>
+        window.addEventListener('resize', function () {
+            var scrittaMutevole = document.getElementById('scrittaMutevole');
+            if (window.innerWidth <= 768) {
+                scrittaMutevole.textContent = 'Questa è la visualizzazione da smartphone!';
+            } else {
+                scrittaMutevole.textContent = 'Questo è un esempio di come potrebbe apparire una card - estetica a parte che spero possiate perdonarmi.';
+            }
+        });
+
+        window.addEventListener('load', function () {
+            var scrittaMutevole = document.getElementById('scrittaMutevole');
+            if (window.innerWidth <= 768) {
+                scrittaMutevole.textContent = 'Questa è la visualizzazione da smartphone!';
+            }
+        });
+    </script>
+</body>
+
+</html>
