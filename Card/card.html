@@ -102,7 +102,7 @@
             var scrittaMutevole = document.getElementById('scrittaMutevole');
             if (window.innerWidth <= 768) {
                 scrittaMutevole.textContent = 'Questa è la visualizzazione da smartphone!';
-            }
+            } else { scrittaMutevole.textContent = 'Questa è la visualizzazione standard. Ho cercato di rendere il tutto responsive e inoltre, qualora venisse mostrato da smartphone, il contenuto di questo paragrafo cambierà.' }
         });
 
         window.addEventListener('load', function () {
