@@ -1,0 +1,64 @@
+.general-container {
+    font-family:sans-serif;
+    font-size: 0.4rem;
+    font-weight: lighter;
+    max-width: 80px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "result result result result"
+    "operators operators operators operators"
+    "numbers numbers numbers equal"
+    "numbers numbers numbers equal"
+    "numbers numbers numbers equal";
+    background-color: rgb(236, 121, 121);
+    border: 0.5px rgb(131, 131, 154) solid;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.result {
+    grid-column: span 4;
+    background-color: rgb(94, 94, 94);
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.numbers {
+    grid-area: numbers;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.boxed {
+    border: 0.5px rgb(131, 131, 154) solid;
+}
+
+.operators {
+    background-color:rgba(209, 235, 253, 0.949);
+    grid-area: operators;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.equal {
+    grid-area: equal;
+    text-align: center;
+    align-self: center;
+}
+
+b {
+    padding: 20%;
+}
+
+.result b {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.8rem;
+    color: white;
+    margin: 55px;
+}
