@@ -1,0 +1,62 @@
+.card-header img {
+    width: 10%;
+    height: 10%;
+}
+
+.card-social img {
+    width: 10%;
+}
+
+.card-header .avatar {
+    width: 15%;
+}
+
+.card-main img {
+    width: 100%;
+}
+
+/*___________________________________*/
+
+.main-container {
+    display: flex;
+    flex-direction:row;
+    background-color: aliceblue;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+    border: 1px black solid;
+}
+.card-header {
+    background-color: rgb(172, 172, 172);
+    display: flex;
+    flex-direction:row;
+    border: 1px black solid;
+}
+
+.user-data {
+    display:flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.card-header h4, p {
+    text-align: center;
+    margin:0
+}
+
+.card-main {
+    display: flex;
+    justify-content: center;
+}
+
+.card-social {
+    margin-top: 10%;
+    padding-left: 10%;
+}
+
+.card-text {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
