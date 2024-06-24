@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    height: auto;
+}
+
+.card{
+    background-color: rgb(177, 176, 176);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    width: calc(33.33% - 20px); 
+    margin: 10px;
+}
+
+.top-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 60px; */
+    width: 100%;
+}
+
+
+.placeholder-nome-data{
+    display: flex;
+    padding: 10px;
+    font-size: 1.2rem;
+    gap: 5px;
+}
+
+.placeholder{
+    height: 45px;
+    width: 45px;
+    margin-left:5px ;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.nome-cognome{
+    font-size: 1.5rem;
+}
+
+.data{
+    color: white;
+    font-weight: small;
+}
+
+.tre-punti{
+    padding-right: 20px;
+}
+
+.img-card{
+    width: 100%;
+}
+
+.img-card img{
+    height: auto;
+    width: 100%;
+}
+
+.content-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.like-commento{
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .cards-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .card {
+        width: calc(50% - 20px); 
+      }
+}
+
+@media screen and (max-width: 375px){
+    .cards-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .card {
+        width: calc(100%); 
+      }
+}
